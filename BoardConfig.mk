@@ -183,3 +183,16 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 include vendor/xiaomi/gauguin/BoardConfigVendor.mk
+
+# Set maintainer
+MISTOS_MAINTAINER := "Shailesh"
+
+# Enable GMS 
+WITH_GMS := true
+
+# Enable UI enhancements
+TARGET_ENABLE_BLUR := true
+
+# Enable features
+TARGET_SUPPORTS_QUICK_TAP := true
+BYPASS_CHARGE_SUPPORTED := true
