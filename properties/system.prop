@@ -58,12 +58,9 @@ wifi.interface=wlan0
 # Vendor
 ro.vendor.qti.va_aosp.support=1
 
-#device details
-ro.mist.display=1080 x 2400, 120 hz
-ro.mist.battery=5000mah
-ro.mist.soc=Snapdragon® 750G
-ro.mist.camera=108MP + 8MP + 2MP
-ro.mist.front=16MP
-ro.mist.platform=SM7225 
-ro.mist.screen=6.67' IPS LCD
-ro.mist.device.name=MI 10I 
+# Infinity X device info
+ro.product.marketname=Mi 10i
+ro.infinity.soc=Snapdragon® 750G (SM7225)
+ro.infinity.camera=108MP + 8MP + 2MP + 16MP(front)
+ro.infinity.display=1080 x 2400, 120 hz
+
