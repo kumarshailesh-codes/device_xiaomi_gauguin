@@ -51,7 +51,6 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 
 BOARD_RAMDISK_USE_LZ4 := true
 
-TARGET_KERNEL_CLANG_VERSION := r530567
 TARGET_KERNEL_SOURCE := kernel/xiaomi/gauguin
 TARGET_KERNEL_CONFIG := vendor/lito-perf_defconfig vendor/xiaomi/gauguin.config
 
@@ -183,16 +182,3 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 include vendor/xiaomi/gauguin/BoardConfigVendor.mk
-
-# Set maintainer
-MISTOS_MAINTAINER := "Shailesh"
-
-# Enable GMS 
-WITH_GMS := true
-
-# Enable UI enhancements
-TARGET_ENABLE_BLUR := true
-
-# Enable features
-TARGET_SUPPORTS_QUICK_TAP := true
-BYPASS_CHARGE_SUPPORTED := true
