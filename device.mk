@@ -160,6 +160,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_1.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
+# Dolby
+PRODUCT_PACKAGES += \
+    XiaomiDolby
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
@@ -279,6 +283,10 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 $(call soong_config_set,stagefright,target_disable_thumbnail_block_model,true)
+=======
+PRODUCT_PACKAGES += \
+    libstagefrighthw \
+    libstagefright_foundation-v33
 
 # Native Public Libraries
 PRODUCT_COPY_FILES += \

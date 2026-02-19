@@ -8,6 +8,9 @@
 # Charger
 /vendor/bin/batterysecret                                               u:object_r:vendor_batterysecret_exec:s0
 
+# Data files
+/data/vendor/dolby(/.*)?                                                u:object_r:vendor_data_file:s0
+
 # Elliptic
 /dev/elliptic[0-9]                                                      u:object_r:ultrasound_device:s0
 
@@ -22,6 +25,7 @@
 
 # HALs
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi  u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service                   u:object_r:hal_dms_default_exec:s0
 
 # IIO
 /sys/devices/platform/soc/c440000\.qcom,spmi/spmi-0/spmi0-02/c440000\.qcom,spmi:qcom,pm7250b@2:vadc@3100/iio:device[0-9](/.*?) u:object_r:vendor_sysfs_battery_supply:s0
