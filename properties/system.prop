@@ -64,3 +64,6 @@ ro.infinity.soc=Snapdragon® 750G (SM7225)
 ro.infinity.camera=108MP + 8MP + 2MP + 16MP(front)
 ro.infinity.display=1080 x 2400, 120 hz
 
+# AxionOS ScrollOptimizer
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1
