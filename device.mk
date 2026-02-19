@@ -22,7 +22,7 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-infinity
 
 PRODUCT_PACKAGES += \
     GauguinApertureOverlay \
@@ -272,11 +272,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
-$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
+$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,true)
 
 # Media
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+$(call soong_config_set,stagefright,target_disable_thumbnail_block_model,true)
 
 # Native Public Libraries
 PRODUCT_COPY_FILES += \
