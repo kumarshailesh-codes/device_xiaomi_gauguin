@@ -441,5 +441,6 @@ PRODUCT_PACKAGES += \
     
 # MistOS OTA overlay
 PRODUCT_PACKAGES += \
-    UpdaterResGauguinMistOS
-    
+    UpdaterResGauguinaxion
+
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)

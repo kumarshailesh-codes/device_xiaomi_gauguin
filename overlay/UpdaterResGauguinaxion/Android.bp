@@ -1,4 +1,4 @@
 runtime_resource_overlay {
-    name: "UpdaterResGauguinMistOS",
+    name: "UpdaterResGauguinaxion",
     product_specific: true,
 }
